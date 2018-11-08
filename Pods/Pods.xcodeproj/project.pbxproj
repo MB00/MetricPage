@@ -1,0 +1,1273 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05FDB877BFDDA5FB74889A48B79C194F /* Disk+InternalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3E4AD19D586942157C0A4F3208F415 /* Disk+InternalHelpers.swift */; };
+		08981519C16DC1E55B4110B4554629F0 /* LinePlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B164C9E93A4F4EC62BACC951D5389D /* LinePlot.swift */; };
+		0977B3211F7AA7CAEF2294CA25E8009F /* Disk+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F94120CDDDF783510D21F9A14581C5 /* Disk+Helpers.swift */; };
+		09AE97E68E0272DB6871EF8456A6BF20 /* Disk+[Data].swift in Sources */ = {isa = PBXBuildFile; fileRef = E644793EF95525C5426D1879EBA6F6D5 /* Disk+[Data].swift */; };
+		1146247C40FDA491860BC2FDA5A38935 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		1C9B574C0977F92C8FF16232AA6067B2 /* LabelPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375B766F0DFBC086646672594172ACF1 /* LabelPool.swift */; };
+		22975FD7A64E8B835221F4F330753117 /* Pods-MetricPageTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A006D15B1F205E5803A9726F2CBD82FF /* Pods-MetricPageTests-dummy.m */; };
+		2B38485494A29AE87D0DED08B298A6A1 /* Plot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF556B73FE02073355C39B312E533814 /* Plot.swift */; };
+		382A0223238298CBAE5C9BB443C915AF /* ScrollableGraphViewDrawingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3865EF849AC405E2F1EC5D385F9859C /* ScrollableGraphViewDrawingDelegate.swift */; };
+		3DF8203894146E649CC3C2EE1ECFBE98 /* Disk+Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328FF3AE6891476F3CFB2942A28F6F6F /* Disk+Errors.swift */; };
+		408B396C97AB4605A0F7729F61241A18 /* Pods-MetricPage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 53F072105A2144095BB1E41B49B54283 /* Pods-MetricPage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C988994FC79D1FDCF8154A4AE946192 /* GraphPointAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8932D9250D687C4A4B09C83F8027399 /* GraphPointAnimation.swift */; };
+		5024E48B47EEF14E117CB50EC8184557 /* Disk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 530D774D53275F6A46D9A3D1AB88CF50 /* Disk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52345A0A98E26AB82D7156E31E79422A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		62C6FAA8A8FD7F4FDA62F22DBC5C7CD8 /* Disk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C18F48574B1CA1D2D8B0A4B409A6B45E /* Disk-dummy.m */; };
+		6530B72A04C69CD55B396675C2AD95A1 /* Pods-MetricPageUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFB4C8F3C4AA25BF557F5F44543B1C8 /* Pods-MetricPageUITests-dummy.m */; };
+		6A1998B06F76DDD739B0DBD5E9AB415D /* DotDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F932FA095FD425514898B0ED4E87CBF3 /* DotDrawingLayer.swift */; };
+		7BD255E618F7074757E284F14FA287F7 /* ScrollableGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CB9EC55D55560018578B75DB8C74BB /* ScrollableGraphView.swift */; };
+		808675E70D32AC56F636B49995DBD186 /* Pods-MetricPage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4100F294EB1AC73F55178F5D97621C4 /* Pods-MetricPage-dummy.m */; };
+		80CD56FDEA1B55D3AD2ECDBC92834BF9 /* Disk+[UIImage].swift in Sources */ = {isa = PBXBuildFile; fileRef = 988CD649ACF3C2D325A1BE3D02F82E99 /* Disk+[UIImage].swift */; };
+		83EDAE470B5EA00DC23F0F35124EABA1 /* GraphPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE8216A55FB5FDB3C9B3219E797A25 /* GraphPoint.swift */; };
+		85A724A742E485CE02045C769D7F3F59 /* Disk+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14B069BF4BEA50B563A4D7A7240451B /* Disk+Codable.swift */; };
+		9682154D32CB1D563DAA45D642164A6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		987AB8F5B3E9C9C3FA0005BE3500AC0C /* ScrollableGraphView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED95C417CE49503F7EA7F6D7905AB6E5 /* ScrollableGraphView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B93AB0ADE0D3F7C16C517BC49943136 /* BarPlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7186922DE5B967D475922C6D58871012 /* BarPlot.swift */; };
+		A029535689E2A3E584FC2E97ACEC713A /* ScrollableGraphViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328002074FD13682BA80622E5D104B45 /* ScrollableGraphViewDataSource.swift */; };
+		A415E8FBD9917689FD899F97DCD5FF0C /* Disk.h in Headers */ = {isa = PBXBuildFile; fileRef = CEB3A2E46A26C48D157951686EEC3715 /* Disk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACBE09A03C50F215890C58BCF85CCC8D /* DotPlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13F9A3FC232436994F03231A70C1214 /* DotPlot.swift */; };
+		B18572C74BDA9272E80504864436AE3A /* ScrollableGraphView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3168BF81850A79E6682E57ED9BA4D0C2 /* ScrollableGraphView-dummy.m */; };
+		BB37FF10EBA050CD29145F84FEB31A07 /* Disk+VolumeInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5903CFFA955A0009885121387A7FF0D /* Disk+VolumeInformation.swift */; };
+		BC30DFB4D20ABB46682F4E0C6AE22CED /* ReferenceLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F4EDB43C60799A567FC16D03F0706D /* ReferenceLines.swift */; };
+		C06EA907E6829CE4FD9A6645C9269C99 /* ScrollableGraphViewDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E7FA17B5BC4F2F6566A0E46DD26DC /* ScrollableGraphViewDrawingLayer.swift */; };
+		C08E77F3BF1141E5A780E72A9A3916F1 /* ReferenceLineDrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E3DC9B378C472F7A37F3D47C5FE5B3 /* ReferenceLineDrawingView.swift */; };
+		C5DA968DAFEB89A21CEA5B82C5891AA0 /* GradientDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24201971781533598E42677A60990AA6 /* GradientDrawingLayer.swift */; };
+		C6E920A48181797B2C8D9DC22890C6A7 /* Pods-MetricPageTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30390B97DD2617334D3C7AECB1751F85 /* Pods-MetricPageTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C86300755CD429FFBFA82F2EABE99116 /* FillDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5685AC7C977D4107ABC1816DA9356C30 /* FillDrawingLayer.swift */; };
+		C8AD9AB4404222FDAD08A8892A6A7586 /* BarDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84AFE889D16DC206C21439DB2259118 /* BarDrawingLayer.swift */; };
+		CEBE3BB59C0F67BAE3959C567BD47031 /* Pods-MetricPageUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CB6208C83D4FA73EA26E700F693E2EF /* Pods-MetricPageUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8E5ABC0555B5361FD278962BBBE72D5 /* Disk+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578031D13881AAAC5426FBB5A2036D54 /* Disk+UIImage.swift */; };
+		E0EEA47179BBBEA2C3660A751E24CEA8 /* LineDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901D2EDAE429456DB5FD87A1E06CA8BB /* LineDrawingLayer.swift */; };
+		E706559F9BFF201B274832BE337347C6 /* Disk+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B43E7BED7021FFE1F81CC8169009F /* Disk+Data.swift */; };
+		F0ACF1F9ED5054E08541A220AABB4B8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		F7FCC4C410DF9C58DD2250209BF5485A /* Disk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0259CC0699AF35A1B0A447E07D6E74 /* Disk.swift */; };
+		F8D782BA9B82B2E63D6424E81BDB79CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B43BA7098C801A89EE11422F5B04185 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E66F8D458061666A348A38C9D3A1145C;
+			remoteInfo = "Pods-MetricPage";
+		};
+		9672E90A47BB11E789849B93706EF3E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CDC6F0CAFAE1779F0B239ED6E2B769B;
+			remoteInfo = Disk;
+		};
+		D7272633CA60F18F10FA093325DE6609 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E66F8D458061666A348A38C9D3A1145C;
+			remoteInfo = "Pods-MetricPage";
+		};
+		DB3D304C53603C8E5FA2BEBCD5CFA335 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBC80F63F52823823A8397D99C142206;
+			remoteInfo = ScrollableGraphView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		055B43E7BED7021FFE1F81CC8169009F /* Disk+Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+Data.swift"; path = "Sources/Disk+Data.swift"; sourceTree = "<group>"; };
+		0AD395009BBF5F7C7A170D6C219051E0 /* Pods-MetricPageTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MetricPageTests.modulemap"; sourceTree = "<group>"; };
+		12CB9EC55D55560018578B75DB8C74BB /* ScrollableGraphView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableGraphView.swift; path = Classes/ScrollableGraphView.swift; sourceTree = "<group>"; };
+		1373E96EEA820F492F1EC13B2A20BE4D /* ScrollableGraphView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollableGraphView-prefix.pch"; sourceTree = "<group>"; };
+		19CD65080C4307226C05D56CB4EE5132 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FDA69C059DB71743CBC89AB141692D6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24201971781533598E42677A60990AA6 /* GradientDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientDrawingLayer.swift; path = Classes/Drawing/GradientDrawingLayer.swift; sourceTree = "<group>"; };
+		2AC867BD90C831ED38C3BEA0B28FC740 /* Disk-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Disk-prefix.pch"; sourceTree = "<group>"; };
+		30390B97DD2617334D3C7AECB1751F85 /* Pods-MetricPageTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MetricPageTests-umbrella.h"; sourceTree = "<group>"; };
+		3168BF81850A79E6682E57ED9BA4D0C2 /* ScrollableGraphView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ScrollableGraphView-dummy.m"; sourceTree = "<group>"; };
+		328002074FD13682BA80622E5D104B45 /* ScrollableGraphViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableGraphViewDataSource.swift; path = Classes/Protocols/ScrollableGraphViewDataSource.swift; sourceTree = "<group>"; };
+		328FF3AE6891476F3CFB2942A28F6F6F /* Disk+Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+Errors.swift"; path = "Sources/Disk+Errors.swift"; sourceTree = "<group>"; };
+		375B766F0DFBC086646672594172ACF1 /* LabelPool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabelPool.swift; path = Classes/Reference/LabelPool.swift; sourceTree = "<group>"; };
+		381CFAA69F6963D8C7DA2DA4AEB01EEC /* Pods-MetricPageTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MetricPageTests-resources.sh"; sourceTree = "<group>"; };
+		3E3E4AD19D586942157C0A4F3208F415 /* Disk+InternalHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+InternalHelpers.swift"; path = "Sources/Disk+InternalHelpers.swift"; sourceTree = "<group>"; };
+		3F4E37F4A90AE662FE0CEEE8E2684D63 /* ScrollableGraphView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ScrollableGraphView.modulemap; sourceTree = "<group>"; };
+		4024E08BBE4863E3B99272D6DA1EFE8C /* Pods-MetricPage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MetricPage.debug.xcconfig"; sourceTree = "<group>"; };
+		491EEE7FB1AEB264E77B20EA8A7496C9 /* Disk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Disk.framework; path = Disk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B588DE435D759C5B08F3754101A450A /* ScrollableGraphView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ScrollableGraphView.framework; path = ScrollableGraphView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E69CE6255215CA27923B331D41EA9C5 /* Pods-MetricPageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MetricPageUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		530D774D53275F6A46D9A3D1AB88CF50 /* Disk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Disk-umbrella.h"; sourceTree = "<group>"; };
+		53F072105A2144095BB1E41B49B54283 /* Pods-MetricPage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MetricPage-umbrella.h"; sourceTree = "<group>"; };
+		5685AC7C977D4107ABC1816DA9356C30 /* FillDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FillDrawingLayer.swift; path = Classes/Drawing/FillDrawingLayer.swift; sourceTree = "<group>"; };
+		578031D13881AAAC5426FBB5A2036D54 /* Disk+UIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+UIImage.swift"; path = "Sources/Disk+UIImage.swift"; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5B1A995452A4618F4B825713BAF27769 /* Pods-MetricPage-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MetricPage-resources.sh"; sourceTree = "<group>"; };
+		6A5A1451E0FE8F6E65A9EDD74B1B2E02 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AE7B32B785C8D08E1AFAF674704CBCF /* Pods-MetricPageTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MetricPageTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6CFB4C8F3C4AA25BF557F5F44543B1C8 /* Pods-MetricPageUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MetricPageUITests-dummy.m"; sourceTree = "<group>"; };
+		7186922DE5B967D475922C6D58871012 /* BarPlot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarPlot.swift; path = Classes/Plots/BarPlot.swift; sourceTree = "<group>"; };
+		74308954FB1EC7F29D44C64DF0E54F3C /* Pods_MetricPage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MetricPage.framework; path = "Pods-MetricPage.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75BD0749F81B674FBC938C724B4AD0B6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CB6208C83D4FA73EA26E700F693E2EF /* Pods-MetricPageUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MetricPageUITests-umbrella.h"; sourceTree = "<group>"; };
+		7F28BD490C7FB1C25B264CE52141BE9F /* Pods-MetricPage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MetricPage.modulemap"; sourceTree = "<group>"; };
+		82B164C9E93A4F4EC62BACC951D5389D /* LinePlot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinePlot.swift; path = Classes/Plots/LinePlot.swift; sourceTree = "<group>"; };
+		83690AF24EF6F0ABC436EFD19AB15322 /* Pods-MetricPage-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MetricPage-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8BF55AF269989D42D9F3439E3335966B /* Pods-MetricPage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MetricPage.release.xcconfig"; sourceTree = "<group>"; };
+		8C0259CC0699AF35A1B0A447E07D6E74 /* Disk.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Disk.swift; path = Sources/Disk.swift; sourceTree = "<group>"; };
+		8CA9F0DECABBDD8F24F3A6DD4AB808C2 /* Pods_MetricPageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MetricPageTests.framework; path = "Pods-MetricPageTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		901D2EDAE429456DB5FD87A1E06CA8BB /* LineDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineDrawingLayer.swift; path = Classes/Drawing/LineDrawingLayer.swift; sourceTree = "<group>"; };
+		90F4EDB43C60799A567FC16D03F0706D /* ReferenceLines.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReferenceLines.swift; path = Classes/Reference/ReferenceLines.swift; sourceTree = "<group>"; };
+		91E3DC9B378C472F7A37F3D47C5FE5B3 /* ReferenceLineDrawingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReferenceLineDrawingView.swift; path = Classes/Drawing/ReferenceLineDrawingView.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		946EDD3997638449694D4601DEFB69F2 /* Pods-MetricPageUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MetricPageUITests-frameworks.sh"; sourceTree = "<group>"; };
+		988CD649ACF3C2D325A1BE3D02F82E99 /* Disk+[UIImage].swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+[UIImage].swift"; path = "Sources/Disk+[UIImage].swift"; sourceTree = "<group>"; };
+		98F94120CDDDF783510D21F9A14581C5 /* Disk+Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+Helpers.swift"; path = "Sources/Disk+Helpers.swift"; sourceTree = "<group>"; };
+		991AEEB9D923C1526B5B923CD2911F83 /* Disk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Disk.modulemap; sourceTree = "<group>"; };
+		A006D15B1F205E5803A9726F2CBD82FF /* Pods-MetricPageTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MetricPageTests-dummy.m"; sourceTree = "<group>"; };
+		A176068E7937782E4CC23BB398426E76 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4100F294EB1AC73F55178F5D97621C4 /* Pods-MetricPage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MetricPage-dummy.m"; sourceTree = "<group>"; };
+		A530DF1D9E1DEA28A6A2BFB15073CFA6 /* Pods-MetricPageUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MetricPageUITests.modulemap"; sourceTree = "<group>"; };
+		AF236986FE069EAE7F9446C6A59A01CC /* Pods-MetricPageUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MetricPageUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B4FE8216A55FB5FDB3C9B3219E797A25 /* GraphPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphPoint.swift; path = Classes/Plots/Animation/GraphPoint.swift; sourceTree = "<group>"; };
+		C08E7FA17B5BC4F2F6566A0E46DD26DC /* ScrollableGraphViewDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableGraphViewDrawingLayer.swift; path = Classes/Drawing/ScrollableGraphViewDrawingLayer.swift; sourceTree = "<group>"; };
+		C14B069BF4BEA50B563A4D7A7240451B /* Disk+Codable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+Codable.swift"; path = "Sources/Disk+Codable.swift"; sourceTree = "<group>"; };
+		C18F48574B1CA1D2D8B0A4B409A6B45E /* Disk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Disk-dummy.m"; sourceTree = "<group>"; };
+		C6F84E231A6CEA74ADCC626DC6DA43AE /* Pods-MetricPageTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MetricPageTests-frameworks.sh"; sourceTree = "<group>"; };
+		CD9CEFD0173CA32890699D62AF21864D /* ScrollableGraphView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScrollableGraphView.xcconfig; sourceTree = "<group>"; };
+		CEB3A2E46A26C48D157951686EEC3715 /* Disk.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Disk.h; path = Sources/Disk.h; sourceTree = "<group>"; };
+		CF556B73FE02073355C39B312E533814 /* Plot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Plot.swift; path = Classes/Plots/Plot.swift; sourceTree = "<group>"; };
+		D09E887759089B268118CC7086FCA363 /* Pods-MetricPageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MetricPageTests.release.xcconfig"; sourceTree = "<group>"; };
+		D45F983FA18C5088FD31631E700AE3F8 /* Pods-MetricPageUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MetricPageUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D53D6F363DAF9CD7BC32BA4C401F631C /* Pods-MetricPageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MetricPageTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D7702C1518FCCAAF8D536542C1FA4139 /* Pods-MetricPage-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MetricPage-frameworks.sh"; sourceTree = "<group>"; };
+		E14907F714D3E3C6FD325BAC434D7782 /* Pods-MetricPageUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MetricPageUITests-resources.sh"; sourceTree = "<group>"; };
+		E2D83A31AB35E67D8DC38E92FFD87055 /* Pods-MetricPageTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MetricPageTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E3865EF849AC405E2F1EC5D385F9859C /* ScrollableGraphViewDrawingDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableGraphViewDrawingDelegate.swift; path = Classes/Protocols/ScrollableGraphViewDrawingDelegate.swift; sourceTree = "<group>"; };
+		E644793EF95525C5426D1879EBA6F6D5 /* Disk+[Data].swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+[Data].swift"; path = "Sources/Disk+[Data].swift"; sourceTree = "<group>"; };
+		EB51E1EC2B35BE3579CE8B9C399B03D5 /* Pods_MetricPageUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MetricPageUITests.framework; path = "Pods-MetricPageUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED95C417CE49503F7EA7F6D7905AB6E5 /* ScrollableGraphView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollableGraphView-umbrella.h"; sourceTree = "<group>"; };
+		F13F9A3FC232436994F03231A70C1214 /* DotPlot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DotPlot.swift; path = Classes/Plots/DotPlot.swift; sourceTree = "<group>"; };
+		F2280B24CD6DCE1D40D068E351221E2C /* Pods-MetricPage-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MetricPage-acknowledgements.plist"; sourceTree = "<group>"; };
+		F5903CFFA955A0009885121387A7FF0D /* Disk+VolumeInformation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+VolumeInformation.swift"; path = "Sources/Disk+VolumeInformation.swift"; sourceTree = "<group>"; };
+		F7FA56E7E9B635DAD27186C2C3348550 /* Pods-MetricPageUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MetricPageUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F84AFE889D16DC206C21439DB2259118 /* BarDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarDrawingLayer.swift; path = Classes/Drawing/BarDrawingLayer.swift; sourceTree = "<group>"; };
+		F8932D9250D687C4A4B09C83F8027399 /* GraphPointAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphPointAnimation.swift; path = Classes/Plots/Animation/GraphPointAnimation.swift; sourceTree = "<group>"; };
+		F932FA095FD425514898B0ED4E87CBF3 /* DotDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DotDrawingLayer.swift; path = Classes/Drawing/DotDrawingLayer.swift; sourceTree = "<group>"; };
+		FB045B96538152981AC8FE586F903726 /* Disk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Disk.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DAF2EC04BD7C02F751486F70B421CFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9682154D32CB1D563DAA45D642164A6C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7448CBDF586E1B3F278DD1A952D5663F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D782BA9B82B2E63D6424E81BDB79CA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B52EA6D420008AD966D372F9178D15F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52345A0A98E26AB82D7156E31E79422A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3CE65472B66741E1127B88DA739F262 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1146247C40FDA491860BC2FDA5A38935 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E66FB1EA70522A605C367D2D40D62ABB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0ACF1F9ED5054E08541A220AABB4B8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00D0C13DD7745376A4D9240434AFEBFC /* Disk */ = {
+			isa = PBXGroup;
+			children = (
+				CEB3A2E46A26C48D157951686EEC3715 /* Disk.h */,
+				8C0259CC0699AF35A1B0A447E07D6E74 /* Disk.swift */,
+				E644793EF95525C5426D1879EBA6F6D5 /* Disk+[Data].swift */,
+				988CD649ACF3C2D325A1BE3D02F82E99 /* Disk+[UIImage].swift */,
+				C14B069BF4BEA50B563A4D7A7240451B /* Disk+Codable.swift */,
+				055B43E7BED7021FFE1F81CC8169009F /* Disk+Data.swift */,
+				328FF3AE6891476F3CFB2942A28F6F6F /* Disk+Errors.swift */,
+				98F94120CDDDF783510D21F9A14581C5 /* Disk+Helpers.swift */,
+				3E3E4AD19D586942157C0A4F3208F415 /* Disk+InternalHelpers.swift */,
+				578031D13881AAAC5426FBB5A2036D54 /* Disk+UIImage.swift */,
+				F5903CFFA955A0009885121387A7FF0D /* Disk+VolumeInformation.swift */,
+				8B9A5A2440B762A842D1C838C7B6171F /* Support Files */,
+			);
+			name = Disk;
+			path = Disk;
+			sourceTree = "<group>";
+		};
+		11E29E9767F3640FB89E17BB2701965A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				491EEE7FB1AEB264E77B20EA8A7496C9 /* Disk.framework */,
+				74308954FB1EC7F29D44C64DF0E54F3C /* Pods_MetricPage.framework */,
+				8CA9F0DECABBDD8F24F3A6DD4AB808C2 /* Pods_MetricPageTests.framework */,
+				EB51E1EC2B35BE3579CE8B9C399B03D5 /* Pods_MetricPageUITests.framework */,
+				4B588DE435D759C5B08F3754101A450A /* ScrollableGraphView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1324741B7086C54EFF8EE87806037F54 /* ScrollableGraphView */ = {
+			isa = PBXGroup;
+			children = (
+				F84AFE889D16DC206C21439DB2259118 /* BarDrawingLayer.swift */,
+				7186922DE5B967D475922C6D58871012 /* BarPlot.swift */,
+				F932FA095FD425514898B0ED4E87CBF3 /* DotDrawingLayer.swift */,
+				F13F9A3FC232436994F03231A70C1214 /* DotPlot.swift */,
+				5685AC7C977D4107ABC1816DA9356C30 /* FillDrawingLayer.swift */,
+				24201971781533598E42677A60990AA6 /* GradientDrawingLayer.swift */,
+				B4FE8216A55FB5FDB3C9B3219E797A25 /* GraphPoint.swift */,
+				F8932D9250D687C4A4B09C83F8027399 /* GraphPointAnimation.swift */,
+				375B766F0DFBC086646672594172ACF1 /* LabelPool.swift */,
+				901D2EDAE429456DB5FD87A1E06CA8BB /* LineDrawingLayer.swift */,
+				82B164C9E93A4F4EC62BACC951D5389D /* LinePlot.swift */,
+				CF556B73FE02073355C39B312E533814 /* Plot.swift */,
+				91E3DC9B378C472F7A37F3D47C5FE5B3 /* ReferenceLineDrawingView.swift */,
+				90F4EDB43C60799A567FC16D03F0706D /* ReferenceLines.swift */,
+				12CB9EC55D55560018578B75DB8C74BB /* ScrollableGraphView.swift */,
+				328002074FD13682BA80622E5D104B45 /* ScrollableGraphViewDataSource.swift */,
+				E3865EF849AC405E2F1EC5D385F9859C /* ScrollableGraphViewDrawingDelegate.swift */,
+				C08E7FA17B5BC4F2F6566A0E46DD26DC /* ScrollableGraphViewDrawingLayer.swift */,
+				BBC7CD381902E06707082D1699C7B01F /* Support Files */,
+			);
+			name = ScrollableGraphView;
+			path = ScrollableGraphView;
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				F2658BD8703CD0EB603214895DFE0987 /* Pods */,
+				11E29E9767F3640FB89E17BB2701965A /* Products */,
+				C0CBC54EBCE3478CDF39A4F3C4D76EDD /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8B9A5A2440B762A842D1C838C7B6171F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				991AEEB9D923C1526B5B923CD2911F83 /* Disk.modulemap */,
+				FB045B96538152981AC8FE586F903726 /* Disk.xcconfig */,
+				C18F48574B1CA1D2D8B0A4B409A6B45E /* Disk-dummy.m */,
+				2AC867BD90C831ED38C3BEA0B28FC740 /* Disk-prefix.pch */,
+				530D774D53275F6A46D9A3D1AB88CF50 /* Disk-umbrella.h */,
+				A176068E7937782E4CC23BB398426E76 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Disk";
+			sourceTree = "<group>";
+		};
+		97E2262C0A05459F38D59A8DF5DE0C84 /* Pods-MetricPageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				75BD0749F81B674FBC938C724B4AD0B6 /* Info.plist */,
+				A530DF1D9E1DEA28A6A2BFB15073CFA6 /* Pods-MetricPageUITests.modulemap */,
+				D45F983FA18C5088FD31631E700AE3F8 /* Pods-MetricPageUITests-acknowledgements.markdown */,
+				F7FA56E7E9B635DAD27186C2C3348550 /* Pods-MetricPageUITests-acknowledgements.plist */,
+				6CFB4C8F3C4AA25BF557F5F44543B1C8 /* Pods-MetricPageUITests-dummy.m */,
+				946EDD3997638449694D4601DEFB69F2 /* Pods-MetricPageUITests-frameworks.sh */,
+				E14907F714D3E3C6FD325BAC434D7782 /* Pods-MetricPageUITests-resources.sh */,
+				7CB6208C83D4FA73EA26E700F693E2EF /* Pods-MetricPageUITests-umbrella.h */,
+				4E69CE6255215CA27923B331D41EA9C5 /* Pods-MetricPageUITests.debug.xcconfig */,
+				AF236986FE069EAE7F9446C6A59A01CC /* Pods-MetricPageUITests.release.xcconfig */,
+			);
+			name = "Pods-MetricPageUITests";
+			path = "Target Support Files/Pods-MetricPageUITests";
+			sourceTree = "<group>";
+		};
+		BBC7CD381902E06707082D1699C7B01F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FDA69C059DB71743CBC89AB141692D6 /* Info.plist */,
+				3F4E37F4A90AE662FE0CEEE8E2684D63 /* ScrollableGraphView.modulemap */,
+				CD9CEFD0173CA32890699D62AF21864D /* ScrollableGraphView.xcconfig */,
+				3168BF81850A79E6682E57ED9BA4D0C2 /* ScrollableGraphView-dummy.m */,
+				1373E96EEA820F492F1EC13B2A20BE4D /* ScrollableGraphView-prefix.pch */,
+				ED95C417CE49503F7EA7F6D7905AB6E5 /* ScrollableGraphView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ScrollableGraphView";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0CBC54EBCE3478CDF39A4F3C4D76EDD /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED1699D8C8D42CCAAC12F888D9FBD2E1 /* Pods-MetricPage */,
+				C40A418F1B350CE238118EC0D17F0590 /* Pods-MetricPageTests */,
+				97E2262C0A05459F38D59A8DF5DE0C84 /* Pods-MetricPageUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C40A418F1B350CE238118EC0D17F0590 /* Pods-MetricPageTests */ = {
+			isa = PBXGroup;
+			children = (
+				6A5A1451E0FE8F6E65A9EDD74B1B2E02 /* Info.plist */,
+				0AD395009BBF5F7C7A170D6C219051E0 /* Pods-MetricPageTests.modulemap */,
+				6AE7B32B785C8D08E1AFAF674704CBCF /* Pods-MetricPageTests-acknowledgements.markdown */,
+				E2D83A31AB35E67D8DC38E92FFD87055 /* Pods-MetricPageTests-acknowledgements.plist */,
+				A006D15B1F205E5803A9726F2CBD82FF /* Pods-MetricPageTests-dummy.m */,
+				C6F84E231A6CEA74ADCC626DC6DA43AE /* Pods-MetricPageTests-frameworks.sh */,
+				381CFAA69F6963D8C7DA2DA4AEB01EEC /* Pods-MetricPageTests-resources.sh */,
+				30390B97DD2617334D3C7AECB1751F85 /* Pods-MetricPageTests-umbrella.h */,
+				D53D6F363DAF9CD7BC32BA4C401F631C /* Pods-MetricPageTests.debug.xcconfig */,
+				D09E887759089B268118CC7086FCA363 /* Pods-MetricPageTests.release.xcconfig */,
+			);
+			name = "Pods-MetricPageTests";
+			path = "Target Support Files/Pods-MetricPageTests";
+			sourceTree = "<group>";
+		};
+		ED1699D8C8D42CCAAC12F888D9FBD2E1 /* Pods-MetricPage */ = {
+			isa = PBXGroup;
+			children = (
+				19CD65080C4307226C05D56CB4EE5132 /* Info.plist */,
+				7F28BD490C7FB1C25B264CE52141BE9F /* Pods-MetricPage.modulemap */,
+				83690AF24EF6F0ABC436EFD19AB15322 /* Pods-MetricPage-acknowledgements.markdown */,
+				F2280B24CD6DCE1D40D068E351221E2C /* Pods-MetricPage-acknowledgements.plist */,
+				A4100F294EB1AC73F55178F5D97621C4 /* Pods-MetricPage-dummy.m */,
+				D7702C1518FCCAAF8D536542C1FA4139 /* Pods-MetricPage-frameworks.sh */,
+				5B1A995452A4618F4B825713BAF27769 /* Pods-MetricPage-resources.sh */,
+				53F072105A2144095BB1E41B49B54283 /* Pods-MetricPage-umbrella.h */,
+				4024E08BBE4863E3B99272D6DA1EFE8C /* Pods-MetricPage.debug.xcconfig */,
+				8BF55AF269989D42D9F3439E3335966B /* Pods-MetricPage.release.xcconfig */,
+			);
+			name = "Pods-MetricPage";
+			path = "Target Support Files/Pods-MetricPage";
+			sourceTree = "<group>";
+		};
+		F2658BD8703CD0EB603214895DFE0987 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00D0C13DD7745376A4D9240434AFEBFC /* Disk */,
+				1324741B7086C54EFF8EE87806037F54 /* ScrollableGraphView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1984787B550C1094B3CC12746F2B329D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6E920A48181797B2C8D9DC22890C6A7 /* Pods-MetricPageTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43779B022B5030105CCF099E19204933 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				987AB8F5B3E9C9C3FA0005BE3500AC0C /* ScrollableGraphView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		588BC7C78FD50713C4A091305508C834 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBE3BB59C0F67BAE3959C567BD47031 /* Pods-MetricPageUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C5233BCD01ECDA1A606188903CB5A1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				408B396C97AB4605A0F7729F61241A18 /* Pods-MetricPage-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3BD4A17C1BA04B596E9CF29FD8E2844 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5024E48B47EEF14E117CB50EC8184557 /* Disk-umbrella.h in Headers */,
+				A415E8FBD9917689FD899F97DCD5FF0C /* Disk.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0931F301F793BF057D3286D87BAFF4F9 /* Pods-MetricPageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 542F493CFBCC1F1A92D0CAC67A77D25C /* Build configuration list for PBXNativeTarget "Pods-MetricPageUITests" */;
+			buildPhases = (
+				588BC7C78FD50713C4A091305508C834 /* Headers */,
+				6BF0553FAE5716E43CD24158409ECB78 /* Sources */,
+				A3CE65472B66741E1127B88DA739F262 /* Frameworks */,
+				06D79BFEAAF6E88CDCBD48F34B94A08E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				195330F482A2B405CEAD804E1D8AE42F /* PBXTargetDependency */,
+			);
+			name = "Pods-MetricPageUITests";
+			productName = "Pods-MetricPageUITests";
+			productReference = EB51E1EC2B35BE3579CE8B9C399B03D5 /* Pods_MetricPageUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4E9E279C99911E3B8F4C6AA58D1682B7 /* Pods-MetricPageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EAAADC1EB1F493D2DCE994F61841911 /* Build configuration list for PBXNativeTarget "Pods-MetricPageTests" */;
+			buildPhases = (
+				1984787B550C1094B3CC12746F2B329D /* Headers */,
+				6FB53927310CFDFDD8D79E4363975C1B /* Sources */,
+				7448CBDF586E1B3F278DD1A952D5663F /* Frameworks */,
+				65E2331ED9CEFDC812346C0503EC3A3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AE269EAABD8720DBA662B8318975719 /* PBXTargetDependency */,
+			);
+			name = "Pods-MetricPageTests";
+			productName = "Pods-MetricPageTests";
+			productReference = 8CA9F0DECABBDD8F24F3A6DD4AB808C2 /* Pods_MetricPageTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6CDC6F0CAFAE1779F0B239ED6E2B769B /* Disk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57358B8801E359E63BDF6FE8C33A1C35 /* Build configuration list for PBXNativeTarget "Disk" */;
+			buildPhases = (
+				F3BD4A17C1BA04B596E9CF29FD8E2844 /* Headers */,
+				36C14BB6B9C439E097009A6538A74C62 /* Sources */,
+				4DAF2EC04BD7C02F751486F70B421CFC /* Frameworks */,
+				A40014CA2207B309BA5F52AEEC75A616 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Disk;
+			productName = Disk;
+			productReference = 491EEE7FB1AEB264E77B20EA8A7496C9 /* Disk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E66F8D458061666A348A38C9D3A1145C /* Pods-MetricPage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17D1A2D64370683985338904FDE42973 /* Build configuration list for PBXNativeTarget "Pods-MetricPage" */;
+			buildPhases = (
+				D8C5233BCD01ECDA1A606188903CB5A1 /* Headers */,
+				DE02E7C6917CB2C36D57593204936F70 /* Sources */,
+				E66FB1EA70522A605C367D2D40D62ABB /* Frameworks */,
+				23813B16FDEF243428E9C1703E16FC92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F2E6EA4066023EE36E8FDE4507DCEB4 /* PBXTargetDependency */,
+				CDE5F9E8A8FB06748A6B5624AE3B9429 /* PBXTargetDependency */,
+			);
+			name = "Pods-MetricPage";
+			productName = "Pods-MetricPage";
+			productReference = 74308954FB1EC7F29D44C64DF0E54F3C /* Pods_MetricPage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EBC80F63F52823823A8397D99C142206 /* ScrollableGraphView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88AFDD3678AE8C539E38AAA4C7ED1907 /* Build configuration list for PBXNativeTarget "ScrollableGraphView" */;
+			buildPhases = (
+				43779B022B5030105CCF099E19204933 /* Headers */,
+				96F678574AE268528E84D7933236A29A /* Sources */,
+				9B52EA6D420008AD966D372F9178D15F /* Frameworks */,
+				B4C10752B185C968005895979963D2CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScrollableGraphView;
+			productName = ScrollableGraphView;
+			productReference = 4B588DE435D759C5B08F3754101A450A /* ScrollableGraphView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 11E29E9767F3640FB89E17BB2701965A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CDC6F0CAFAE1779F0B239ED6E2B769B /* Disk */,
+				E66F8D458061666A348A38C9D3A1145C /* Pods-MetricPage */,
+				4E9E279C99911E3B8F4C6AA58D1682B7 /* Pods-MetricPageTests */,
+				0931F301F793BF057D3286D87BAFF4F9 /* Pods-MetricPageUITests */,
+				EBC80F63F52823823A8397D99C142206 /* ScrollableGraphView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06D79BFEAAF6E88CDCBD48F34B94A08E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23813B16FDEF243428E9C1703E16FC92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65E2331ED9CEFDC812346C0503EC3A3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A40014CA2207B309BA5F52AEEC75A616 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4C10752B185C968005895979963D2CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36C14BB6B9C439E097009A6538A74C62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09AE97E68E0272DB6871EF8456A6BF20 /* Disk+[Data].swift in Sources */,
+				80CD56FDEA1B55D3AD2ECDBC92834BF9 /* Disk+[UIImage].swift in Sources */,
+				85A724A742E485CE02045C769D7F3F59 /* Disk+Codable.swift in Sources */,
+				E706559F9BFF201B274832BE337347C6 /* Disk+Data.swift in Sources */,
+				3DF8203894146E649CC3C2EE1ECFBE98 /* Disk+Errors.swift in Sources */,
+				0977B3211F7AA7CAEF2294CA25E8009F /* Disk+Helpers.swift in Sources */,
+				05FDB877BFDDA5FB74889A48B79C194F /* Disk+InternalHelpers.swift in Sources */,
+				D8E5ABC0555B5361FD278962BBBE72D5 /* Disk+UIImage.swift in Sources */,
+				BB37FF10EBA050CD29145F84FEB31A07 /* Disk+VolumeInformation.swift in Sources */,
+				62C6FAA8A8FD7F4FDA62F22DBC5C7CD8 /* Disk-dummy.m in Sources */,
+				F7FCC4C410DF9C58DD2250209BF5485A /* Disk.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BF0553FAE5716E43CD24158409ECB78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6530B72A04C69CD55B396675C2AD95A1 /* Pods-MetricPageUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FB53927310CFDFDD8D79E4363975C1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22975FD7A64E8B835221F4F330753117 /* Pods-MetricPageTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96F678574AE268528E84D7933236A29A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8AD9AB4404222FDAD08A8892A6A7586 /* BarDrawingLayer.swift in Sources */,
+				9B93AB0ADE0D3F7C16C517BC49943136 /* BarPlot.swift in Sources */,
+				6A1998B06F76DDD739B0DBD5E9AB415D /* DotDrawingLayer.swift in Sources */,
+				ACBE09A03C50F215890C58BCF85CCC8D /* DotPlot.swift in Sources */,
+				C86300755CD429FFBFA82F2EABE99116 /* FillDrawingLayer.swift in Sources */,
+				C5DA968DAFEB89A21CEA5B82C5891AA0 /* GradientDrawingLayer.swift in Sources */,
+				83EDAE470B5EA00DC23F0F35124EABA1 /* GraphPoint.swift in Sources */,
+				4C988994FC79D1FDCF8154A4AE946192 /* GraphPointAnimation.swift in Sources */,
+				1C9B574C0977F92C8FF16232AA6067B2 /* LabelPool.swift in Sources */,
+				E0EEA47179BBBEA2C3660A751E24CEA8 /* LineDrawingLayer.swift in Sources */,
+				08981519C16DC1E55B4110B4554629F0 /* LinePlot.swift in Sources */,
+				2B38485494A29AE87D0DED08B298A6A1 /* Plot.swift in Sources */,
+				C08E77F3BF1141E5A780E72A9A3916F1 /* ReferenceLineDrawingView.swift in Sources */,
+				BC30DFB4D20ABB46682F4E0C6AE22CED /* ReferenceLines.swift in Sources */,
+				B18572C74BDA9272E80504864436AE3A /* ScrollableGraphView-dummy.m in Sources */,
+				7BD255E618F7074757E284F14FA287F7 /* ScrollableGraphView.swift in Sources */,
+				A029535689E2A3E584FC2E97ACEC713A /* ScrollableGraphViewDataSource.swift in Sources */,
+				382A0223238298CBAE5C9BB443C915AF /* ScrollableGraphViewDrawingDelegate.swift in Sources */,
+				C06EA907E6829CE4FD9A6645C9269C99 /* ScrollableGraphViewDrawingLayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE02E7C6917CB2C36D57593204936F70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				808675E70D32AC56F636B49995DBD186 /* Pods-MetricPage-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		195330F482A2B405CEAD804E1D8AE42F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MetricPage";
+			target = E66F8D458061666A348A38C9D3A1145C /* Pods-MetricPage */;
+			targetProxy = 4B43BA7098C801A89EE11422F5B04185 /* PBXContainerItemProxy */;
+		};
+		5F2E6EA4066023EE36E8FDE4507DCEB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Disk;
+			target = 6CDC6F0CAFAE1779F0B239ED6E2B769B /* Disk */;
+			targetProxy = 9672E90A47BB11E789849B93706EF3E0 /* PBXContainerItemProxy */;
+		};
+		7AE269EAABD8720DBA662B8318975719 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MetricPage";
+			target = E66F8D458061666A348A38C9D3A1145C /* Pods-MetricPage */;
+			targetProxy = D7272633CA60F18F10FA093325DE6609 /* PBXContainerItemProxy */;
+		};
+		CDE5F9E8A8FB06748A6B5624AE3B9429 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ScrollableGraphView;
+			target = EBC80F63F52823823A8397D99C142206 /* ScrollableGraphView */;
+			targetProxy = DB3D304C53603C8E5FA2BEBCD5CFA335 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		19F0DEB7E666669094EA8D4C8BC7C1B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BF55AF269989D42D9F3439E3335966B /* Pods-MetricPage.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MetricPage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MetricPage/Pods-MetricPage.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		25C48ACAAB11EED4782EDAEE67334195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB045B96538152981AC8FE586F903726 /* Disk.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Disk/Disk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Disk/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Disk/Disk.modulemap";
+				PRODUCT_MODULE_NAME = Disk;
+				PRODUCT_NAME = Disk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3E30C9E964ADFFABDB9BF81A81C924CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB045B96538152981AC8FE586F903726 /* Disk.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Disk/Disk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Disk/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Disk/Disk.modulemap";
+				PRODUCT_MODULE_NAME = Disk;
+				PRODUCT_NAME = Disk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		40B45BB3CF3EE4476259302A7FAAD78F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		55BFC8997F2E9A2BF7899039D821818F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4024E08BBE4863E3B99272D6DA1EFE8C /* Pods-MetricPage.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MetricPage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MetricPage/Pods-MetricPage.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		85ED3013A635C27F8B7FAF51362B108C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		89FE25373870BA405D6FE1FD4A843CB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD9CEFD0173CA32890699D62AF21864D /* ScrollableGraphView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ScrollableGraphView/ScrollableGraphView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ScrollableGraphView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ScrollableGraphView/ScrollableGraphView.modulemap";
+				PRODUCT_MODULE_NAME = ScrollableGraphView;
+				PRODUCT_NAME = ScrollableGraphView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9D0DBC9C13E7FE41D4757F5FD28F6613 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF236986FE069EAE7F9446C6A59A01CC /* Pods-MetricPageUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MetricPageUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MetricPageUITests/Pods-MetricPageUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9F2C42F82C792EBBB6145BBFC0F16FC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E69CE6255215CA27923B331D41EA9C5 /* Pods-MetricPageUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MetricPageUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MetricPageUITests/Pods-MetricPageUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A8D737BFE060448D292CB3B339ED2D25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D09E887759089B268118CC7086FCA363 /* Pods-MetricPageTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MetricPageTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MetricPageTests/Pods-MetricPageTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A937CF41AE576E1CE9A0BA51790CA083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D53D6F363DAF9CD7BC32BA4C401F631C /* Pods-MetricPageTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MetricPageTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MetricPageTests/Pods-MetricPageTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D23A19FE36E3A6CD711BF039D76AB767 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD9CEFD0173CA32890699D62AF21864D /* ScrollableGraphView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ScrollableGraphView/ScrollableGraphView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ScrollableGraphView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ScrollableGraphView/ScrollableGraphView.modulemap";
+				PRODUCT_MODULE_NAME = ScrollableGraphView;
+				PRODUCT_NAME = ScrollableGraphView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17D1A2D64370683985338904FDE42973 /* Build configuration list for PBXNativeTarget "Pods-MetricPage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55BFC8997F2E9A2BF7899039D821818F /* Debug */,
+				19F0DEB7E666669094EA8D4C8BC7C1B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EAAADC1EB1F493D2DCE994F61841911 /* Build configuration list for PBXNativeTarget "Pods-MetricPageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A937CF41AE576E1CE9A0BA51790CA083 /* Debug */,
+				A8D737BFE060448D292CB3B339ED2D25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85ED3013A635C27F8B7FAF51362B108C /* Debug */,
+				40B45BB3CF3EE4476259302A7FAAD78F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		542F493CFBCC1F1A92D0CAC67A77D25C /* Build configuration list for PBXNativeTarget "Pods-MetricPageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F2C42F82C792EBBB6145BBFC0F16FC2 /* Debug */,
+				9D0DBC9C13E7FE41D4757F5FD28F6613 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57358B8801E359E63BDF6FE8C33A1C35 /* Build configuration list for PBXNativeTarget "Disk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25C48ACAAB11EED4782EDAEE67334195 /* Debug */,
+				3E30C9E964ADFFABDB9BF81A81C924CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88AFDD3678AE8C539E38AAA4C7ED1907 /* Build configuration list for PBXNativeTarget "ScrollableGraphView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89FE25373870BA405D6FE1FD4A843CB4 /* Debug */,
+				D23A19FE36E3A6CD711BF039D76AB767 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

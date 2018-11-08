@@ -1,0 +1,6 @@
+framework module Pods_MetricPageUITests {
+  umbrella header "Pods-MetricPageUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,756 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A46C55E1074ABD5FF8462FC /* Pods_MetricPage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7AF322FA772FAD3467713B3 /* Pods_MetricPage.framework */; };
+		785289528D9FE80EDE87CDF3 /* Pods_MetricPageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A40D5FEA1D9BF18067AA7F /* Pods_MetricPageTests.framework */; };
+		BC189454F4AAEFF9681EF097 /* Pods_MetricPageUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B5990BCCF5C016122CE961 /* Pods_MetricPageUITests.framework */; };
+		E2B924202193F92C0012E0D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B9241F2193F92C0012E0D4 /* AppDelegate.swift */; };
+		E2B924252193F92C0012E0D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B924232193F92C0012E0D4 /* Main.storyboard */; };
+		E2B924272193F92E0012E0D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2B924262193F92E0012E0D4 /* Assets.xcassets */; };
+		E2B9242A2193F92E0012E0D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B924282193F92E0012E0D4 /* LaunchScreen.storyboard */; };
+		E2B924352193F92F0012E0D4 /* MetricPageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B924342193F92F0012E0D4 /* MetricPageTests.swift */; };
+		E2B924402193F92F0012E0D4 /* MetricPageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B9243F2193F92F0012E0D4 /* MetricPageUITests.swift */; };
+		E2B9244E2193F9DC0012E0D4 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B9244D2193F9DC0012E0D4 /* Action.swift */; };
+		E2B924502193F9F10012E0D4 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B9244F2193F9F10012E0D4 /* Database.swift */; };
+		E2B924522193F9FD0012E0D4 /* Metric.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B924512193F9FD0012E0D4 /* Metric.swift */; };
+		E2B924542193FA0E0012E0D4 /* MetricDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B924532193FA0E0012E0D4 /* MetricDataRepository.swift */; };
+		E2B924562193FA1C0012E0D4 /* MetricEditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B924552193FA1C0012E0D4 /* MetricEditCell.swift */; };
+		E2B924582193FA2E0012E0D4 /* MetricEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B924572193FA2E0012E0D4 /* MetricEditViewController.swift */; };
+		E2B9245A2193FA450012E0D4 /* MetricViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B924592193FA450012E0D4 /* MetricViewController.swift */; };
+		E2B9245E219400400012E0D4 /* MetricCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B9245D219400400012E0D4 /* MetricCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2B924312193F92E0012E0D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2B924142193F92C0012E0D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2B9241B2193F92C0012E0D4;
+			remoteInfo = MetricPage;
+		};
+		E2B9243C2193F92F0012E0D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2B924142193F92C0012E0D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2B9241B2193F92C0012E0D4;
+			remoteInfo = MetricPage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09EAA446B69B3529935205E4 /* Pods-MetricPage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetricPage.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetricPage/Pods-MetricPage.release.xcconfig"; sourceTree = "<group>"; };
+		39B5990BCCF5C016122CE961 /* Pods_MetricPageUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetricPageUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F2D0DC3D5704F4281B3D708 /* Pods-MetricPageUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetricPageUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetricPageUITests/Pods-MetricPageUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AF0355904774BB31B4AFA132 /* Pods-MetricPage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetricPage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MetricPage/Pods-MetricPage.debug.xcconfig"; sourceTree = "<group>"; };
+		CB6197901E6B621FBBAAFCEE /* Pods-MetricPageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetricPageTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MetricPageTests/Pods-MetricPageTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D3A40D5FEA1D9BF18067AA7F /* Pods_MetricPageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetricPageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2B9241C2193F92C0012E0D4 /* MetricPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetricPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2B9241F2193F92C0012E0D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E2B924242193F92C0012E0D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E2B924262193F92E0012E0D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2B924292193F92E0012E0D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E2B9242B2193F92E0012E0D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2B924302193F92E0012E0D4 /* MetricPageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetricPageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2B924342193F92F0012E0D4 /* MetricPageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricPageTests.swift; sourceTree = "<group>"; };
+		E2B924362193F92F0012E0D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2B9243B2193F92F0012E0D4 /* MetricPageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetricPageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2B9243F2193F92F0012E0D4 /* MetricPageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricPageUITests.swift; sourceTree = "<group>"; };
+		E2B924412193F92F0012E0D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2B9244D2193F9DC0012E0D4 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		E2B9244F2193F9F10012E0D4 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		E2B924512193F9FD0012E0D4 /* Metric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metric.swift; sourceTree = "<group>"; };
+		E2B924532193FA0E0012E0D4 /* MetricDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricDataRepository.swift; sourceTree = "<group>"; };
+		E2B924552193FA1C0012E0D4 /* MetricEditCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricEditCell.swift; sourceTree = "<group>"; };
+		E2B924572193FA2E0012E0D4 /* MetricEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricEditViewController.swift; sourceTree = "<group>"; };
+		E2B924592193FA450012E0D4 /* MetricViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricViewController.swift; sourceTree = "<group>"; };
+		E2B9245D219400400012E0D4 /* MetricCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetricCell.swift; sourceTree = "<group>"; };
+		E93CD9A10304C4A7344D841E /* Pods-MetricPageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetricPageTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetricPageTests/Pods-MetricPageTests.release.xcconfig"; sourceTree = "<group>"; };
+		EF5140C0CBCDCB079383457B /* Pods-MetricPageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetricPageUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MetricPageUITests/Pods-MetricPageUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F7AF322FA772FAD3467713B3 /* Pods_MetricPage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetricPage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2B924192193F92C0012E0D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A46C55E1074ABD5FF8462FC /* Pods_MetricPage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2B9242D2193F92E0012E0D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				785289528D9FE80EDE87CDF3 /* Pods_MetricPageTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2B924382193F92F0012E0D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC189454F4AAEFF9681EF097 /* Pods_MetricPageUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9463455CC42B2FFF829007AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7AF322FA772FAD3467713B3 /* Pods_MetricPage.framework */,
+				D3A40D5FEA1D9BF18067AA7F /* Pods_MetricPageTests.framework */,
+				39B5990BCCF5C016122CE961 /* Pods_MetricPageUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2B924132193F92C0012E0D4 = {
+			isa = PBXGroup;
+			children = (
+				E2B9241E2193F92C0012E0D4 /* MetricPage */,
+				E2B924332193F92F0012E0D4 /* MetricPageTests */,
+				E2B9243E2193F92F0012E0D4 /* MetricPageUITests */,
+				E2B9241D2193F92C0012E0D4 /* Products */,
+				F43BBA2E3FA53EACB140A591 /* Pods */,
+				9463455CC42B2FFF829007AF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E2B9241D2193F92C0012E0D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2B9241C2193F92C0012E0D4 /* MetricPage.app */,
+				E2B924302193F92E0012E0D4 /* MetricPageTests.xctest */,
+				E2B9243B2193F92F0012E0D4 /* MetricPageUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2B9241E2193F92C0012E0D4 /* MetricPage */ = {
+			isa = PBXGroup;
+			children = (
+				E2B9241F2193F92C0012E0D4 /* AppDelegate.swift */,
+				E2B924232193F92C0012E0D4 /* Main.storyboard */,
+				E2B9244D2193F9DC0012E0D4 /* Action.swift */,
+				E2B9244F2193F9F10012E0D4 /* Database.swift */,
+				E2B924512193F9FD0012E0D4 /* Metric.swift */,
+				E2B924532193FA0E0012E0D4 /* MetricDataRepository.swift */,
+				E2B9245D219400400012E0D4 /* MetricCell.swift */,
+				E2B924552193FA1C0012E0D4 /* MetricEditCell.swift */,
+				E2B924572193FA2E0012E0D4 /* MetricEditViewController.swift */,
+				E2B924592193FA450012E0D4 /* MetricViewController.swift */,
+				E2B924262193F92E0012E0D4 /* Assets.xcassets */,
+				E2B924282193F92E0012E0D4 /* LaunchScreen.storyboard */,
+				E2B9242B2193F92E0012E0D4 /* Info.plist */,
+			);
+			path = MetricPage;
+			sourceTree = "<group>";
+		};
+		E2B924332193F92F0012E0D4 /* MetricPageTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2B924342193F92F0012E0D4 /* MetricPageTests.swift */,
+				E2B924362193F92F0012E0D4 /* Info.plist */,
+			);
+			path = MetricPageTests;
+			sourceTree = "<group>";
+		};
+		E2B9243E2193F92F0012E0D4 /* MetricPageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E2B9243F2193F92F0012E0D4 /* MetricPageUITests.swift */,
+				E2B924412193F92F0012E0D4 /* Info.plist */,
+			);
+			path = MetricPageUITests;
+			sourceTree = "<group>";
+		};
+		F43BBA2E3FA53EACB140A591 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF0355904774BB31B4AFA132 /* Pods-MetricPage.debug.xcconfig */,
+				09EAA446B69B3529935205E4 /* Pods-MetricPage.release.xcconfig */,
+				CB6197901E6B621FBBAAFCEE /* Pods-MetricPageTests.debug.xcconfig */,
+				E93CD9A10304C4A7344D841E /* Pods-MetricPageTests.release.xcconfig */,
+				EF5140C0CBCDCB079383457B /* Pods-MetricPageUITests.debug.xcconfig */,
+				4F2D0DC3D5704F4281B3D708 /* Pods-MetricPageUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2B9241B2193F92C0012E0D4 /* MetricPage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2B924442193F92F0012E0D4 /* Build configuration list for PBXNativeTarget "MetricPage" */;
+			buildPhases = (
+				A83B04F0CFFB93087A08F424 /* [CP] Check Pods Manifest.lock */,
+				E2B924182193F92C0012E0D4 /* Sources */,
+				E2B924192193F92C0012E0D4 /* Frameworks */,
+				E2B9241A2193F92C0012E0D4 /* Resources */,
+				F6ACFD74EA8F097D5716ABDD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetricPage;
+			productName = MetricPage;
+			productReference = E2B9241C2193F92C0012E0D4 /* MetricPage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2B9242F2193F92E0012E0D4 /* MetricPageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2B924472193F92F0012E0D4 /* Build configuration list for PBXNativeTarget "MetricPageTests" */;
+			buildPhases = (
+				8220641A502B99A441AB186E /* [CP] Check Pods Manifest.lock */,
+				E2B9242C2193F92E0012E0D4 /* Sources */,
+				E2B9242D2193F92E0012E0D4 /* Frameworks */,
+				E2B9242E2193F92E0012E0D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2B924322193F92E0012E0D4 /* PBXTargetDependency */,
+			);
+			name = MetricPageTests;
+			productName = MetricPageTests;
+			productReference = E2B924302193F92E0012E0D4 /* MetricPageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E2B9243A2193F92F0012E0D4 /* MetricPageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2B9244A2193F92F0012E0D4 /* Build configuration list for PBXNativeTarget "MetricPageUITests" */;
+			buildPhases = (
+				CA00365A309268C80FA189F9 /* [CP] Check Pods Manifest.lock */,
+				E2B924372193F92F0012E0D4 /* Sources */,
+				E2B924382193F92F0012E0D4 /* Frameworks */,
+				E2B924392193F92F0012E0D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2B9243D2193F92F0012E0D4 /* PBXTargetDependency */,
+			);
+			name = MetricPageUITests;
+			productName = MetricPageUITests;
+			productReference = E2B9243B2193F92F0012E0D4 /* MetricPageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2B924142193F92C0012E0D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = MB00;
+				TargetAttributes = {
+					E2B9241B2193F92C0012E0D4 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					E2B9242F2193F92E0012E0D4 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = E2B9241B2193F92C0012E0D4;
+					};
+					E2B9243A2193F92F0012E0D4 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = E2B9241B2193F92C0012E0D4;
+					};
+				};
+			};
+			buildConfigurationList = E2B924172193F92C0012E0D4 /* Build configuration list for PBXProject "MetricPage" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2B924132193F92C0012E0D4;
+			productRefGroup = E2B9241D2193F92C0012E0D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2B9241B2193F92C0012E0D4 /* MetricPage */,
+				E2B9242F2193F92E0012E0D4 /* MetricPageTests */,
+				E2B9243A2193F92F0012E0D4 /* MetricPageUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2B9241A2193F92C0012E0D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2B9242A2193F92E0012E0D4 /* LaunchScreen.storyboard in Resources */,
+				E2B924272193F92E0012E0D4 /* Assets.xcassets in Resources */,
+				E2B924252193F92C0012E0D4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2B9242E2193F92E0012E0D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2B924392193F92F0012E0D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8220641A502B99A441AB186E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MetricPageTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A83B04F0CFFB93087A08F424 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MetricPage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA00365A309268C80FA189F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MetricPageUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6ACFD74EA8F097D5716ABDD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MetricPage/Pods-MetricPage-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Disk/Disk.framework",
+				"${BUILT_PRODUCTS_DIR}/ScrollableGraphView/ScrollableGraphView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Disk.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScrollableGraphView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MetricPage/Pods-MetricPage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2B924182193F92C0012E0D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2B9245A2193FA450012E0D4 /* MetricViewController.swift in Sources */,
+				E2B924542193FA0E0012E0D4 /* MetricDataRepository.swift in Sources */,
+				E2B924582193FA2E0012E0D4 /* MetricEditViewController.swift in Sources */,
+				E2B9244E2193F9DC0012E0D4 /* Action.swift in Sources */,
+				E2B924522193F9FD0012E0D4 /* Metric.swift in Sources */,
+				E2B924502193F9F10012E0D4 /* Database.swift in Sources */,
+				E2B924562193FA1C0012E0D4 /* MetricEditCell.swift in Sources */,
+				E2B9245E219400400012E0D4 /* MetricCell.swift in Sources */,
+				E2B924202193F92C0012E0D4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2B9242C2193F92E0012E0D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2B924352193F92F0012E0D4 /* MetricPageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2B924372193F92F0012E0D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2B924402193F92F0012E0D4 /* MetricPageUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2B924322193F92E0012E0D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2B9241B2193F92C0012E0D4 /* MetricPage */;
+			targetProxy = E2B924312193F92E0012E0D4 /* PBXContainerItemProxy */;
+		};
+		E2B9243D2193F92F0012E0D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2B9241B2193F92C0012E0D4 /* MetricPage */;
+			targetProxy = E2B9243C2193F92F0012E0D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E2B924232193F92C0012E0D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2B924242193F92C0012E0D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E2B924282193F92E0012E0D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2B924292193F92E0012E0D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E2B924422193F92F0012E0D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E2B924432193F92F0012E0D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2B924452193F92F0012E0D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF0355904774BB31B4AFA132 /* Pods-MetricPage.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MetricPage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MB00.MetricPage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E2B924462193F92F0012E0D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09EAA446B69B3529935205E4 /* Pods-MetricPage.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MetricPage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MB00.MetricPage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E2B924482193F92F0012E0D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB6197901E6B621FBBAAFCEE /* Pods-MetricPageTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MetricPageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MB00.MetricPageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetricPage.app/MetricPage";
+			};
+			name = Debug;
+		};
+		E2B924492193F92F0012E0D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E93CD9A10304C4A7344D841E /* Pods-MetricPageTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MetricPageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MB00.MetricPageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetricPage.app/MetricPage";
+			};
+			name = Release;
+		};
+		E2B9244B2193F92F0012E0D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF5140C0CBCDCB079383457B /* Pods-MetricPageUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MetricPageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MB00.MetricPageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MetricPage;
+			};
+			name = Debug;
+		};
+		E2B9244C2193F92F0012E0D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F2D0DC3D5704F4281B3D708 /* Pods-MetricPageUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MetricPageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MB00.MetricPageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MetricPage;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2B924172193F92C0012E0D4 /* Build configuration list for PBXProject "MetricPage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2B924422193F92F0012E0D4 /* Debug */,
+				E2B924432193F92F0012E0D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2B924442193F92F0012E0D4 /* Build configuration list for PBXNativeTarget "MetricPage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2B924452193F92F0012E0D4 /* Debug */,
+				E2B924462193F92F0012E0D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2B924472193F92F0012E0D4 /* Build configuration list for PBXNativeTarget "MetricPageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2B924482193F92F0012E0D4 /* Debug */,
+				E2B924492193F92F0012E0D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2B9244A2193F92F0012E0D4 /* Build configuration list for PBXNativeTarget "MetricPageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2B9244B2193F92F0012E0D4 /* Debug */,
+				E2B9244C2193F92F0012E0D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2B924142193F92C0012E0D4 /* Project object */;
+}
