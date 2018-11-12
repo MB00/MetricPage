@@ -24,6 +24,7 @@
 		E2B924582193FA2E0012E0D4 /* MetricEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B924572193FA2E0012E0D4 /* MetricEditViewController.swift */; };
 		E2B9245A2193FA450012E0D4 /* MetricViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B924592193FA450012E0D4 /* MetricViewController.swift */; };
 		E2B9245E219400400012E0D4 /* MetricCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B9245D219400400012E0D4 /* MetricCell.swift */; };
+		E2B92462219979280012E0D4 /* MetricData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B92461219979280012E0D4 /* MetricData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		E2B924572193FA2E0012E0D4 /* MetricEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricEditViewController.swift; sourceTree = "<group>"; };
 		E2B924592193FA450012E0D4 /* MetricViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricViewController.swift; sourceTree = "<group>"; };
 		E2B9245D219400400012E0D4 /* MetricCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetricCell.swift; sourceTree = "<group>"; };
+		E2B92461219979280012E0D4 /* MetricData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetricData.swift; sourceTree = "<group>"; };
 		E93CD9A10304C4A7344D841E /* Pods-MetricPageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetricPageTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetricPageTests/Pods-MetricPageTests.release.xcconfig"; sourceTree = "<group>"; };
 		EF5140C0CBCDCB079383457B /* Pods-MetricPageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetricPageUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MetricPageUITests/Pods-MetricPageUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F7AF322FA772FAD3467713B3 /* Pods_MetricPage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetricPage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,11 +145,12 @@
 				E2B9244D2193F9DC0012E0D4 /* Action.swift */,
 				E2B9244F2193F9F10012E0D4 /* Database.swift */,
 				E2B924512193F9FD0012E0D4 /* Metric.swift */,
+				E2B92461219979280012E0D4 /* MetricData.swift */,
 				E2B924532193FA0E0012E0D4 /* MetricDataRepository.swift */,
 				E2B9245D219400400012E0D4 /* MetricCell.swift */,
 				E2B924552193FA1C0012E0D4 /* MetricEditCell.swift */,
-				E2B924572193FA2E0012E0D4 /* MetricEditViewController.swift */,
 				E2B924592193FA450012E0D4 /* MetricViewController.swift */,
+				E2B924572193FA2E0012E0D4 /* MetricEditViewController.swift */,
 				E2B924262193F92E0012E0D4 /* Assets.xcassets */,
 				E2B924282193F92E0012E0D4 /* LaunchScreen.storyboard */,
 				E2B9242B2193F92E0012E0D4 /* Info.plist */,
@@ -421,6 +424,7 @@
 				E2B924522193F9FD0012E0D4 /* Metric.swift in Sources */,
 				E2B924502193F9F10012E0D4 /* Database.swift in Sources */,
 				E2B924562193FA1C0012E0D4 /* MetricEditCell.swift in Sources */,
+				E2B92462219979280012E0D4 /* MetricData.swift in Sources */,
 				E2B9245E219400400012E0D4 /* MetricCell.swift in Sources */,
 				E2B924202193F92C0012E0D4 /* AppDelegate.swift in Sources */,
 			);

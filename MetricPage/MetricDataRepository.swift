@@ -5,6 +5,36 @@ import Foundation
 
 class MetricDataRepository {
     
+    static var isBenchPressAdded = false
+    static var isChestAdded = false
+    static var isDeadliftAdded = false
+    static var isHipsButtAdded = false
+    static var isLegPressAdded = false
+    static var isMilitaryPressAdded = false
+    static var isPushupTest = false
+    static var isSquatAdded = false
+    static var isUpperArmAdded = false
+    static var isUpperThighAdded = false
+    static var isWaistAdded = false
+    
+    static var benchPressDate = "Today"
+    static var chestDate = "Today"
+    static var deadliftDate = "Today"
+    static var hipsButtDate = "Today"
+    static var legPressDate = "Today"
+    static var militaryPressDate = "Today"
+    static var pushupTestDate = "Today"
+    static var squatDate = "Today"
+    static var upperArmDate = "Today"
+    static var upperThighDate = "Today"
+    static var waistDate = "Today"
+    
+    static var allValues = [Double]()
+    
+    static var previousValue = "N/A"
+    static var valueSum = 0.0
+    static var averageValue = ""
+    
     var metrics: [Metric] = []
     var sections: [String] = []
     
@@ -13,6 +43,13 @@ class MetricDataRepository {
     
     var typeBodyMeasurements = "Body Measurements"
     var typeMaximumStrength = "Maximum Strength"
+    
+    static func updateAllValues(enteredValue: String) {
+        allValues.append(Double(enteredValue) ?? 0)
+        previousValue = enteredValue
+        valueSum += Double(enteredValue) ?? 0
+        averageValue = String(valueSum / Double(allValues.count))
+    }
     
     init() {
         initMetrics()

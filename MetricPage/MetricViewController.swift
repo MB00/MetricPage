@@ -3,9 +3,14 @@ import ScrollableGraphView
 
 class MetricViewController: UIViewController {
     
+    @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var tableView: UITableView!
     
-    let graphView = ScrollableGraphView()
+    @IBOutlet weak var currentValueLabel: UILabel!
+    @IBOutlet weak var previousValueLabel: UILabel!
+    @IBOutlet weak var averageValueLabel: UILabel!
+    
+    @IBOutlet weak var field: UITextField!
     
     var metrics: [Metric] = []
     var sections: [String] = []
@@ -14,8 +19,76 @@ class MetricViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        initData()
+        initGraphView()
+        initActions()
+    }
+    
+    func initData() {
         metrics = metricDataRepository.getMetrics()
         sections = metricDataRepository.getSections()
+    }
+    
+    func initGraphView() {
+        let graphView = ScrollableGraphView()
+        let linePlot = LinePlot(identifier: "line")
+        let referenceLines = ReferenceLines()
+        
+        graphView.addPlot(plot: linePlot)
+        graphView.addReferenceLines(referenceLines: referenceLines)
+        
+        containerView.addSubview(graphView)
+        containerView.bringSubviewToFront(graphView)
+    }
+    
+    func initActions() {
+        let valueLabelTap = UITapGestureRecognizer(target: self, action: #selector(onCurrentValueClicked))
+        currentValueLabel.isUserInteractionEnabled = true
+        currentValueLabel.addGestureRecognizer(valueLabelTap)
+    }
+    
+    @objc func onCurrentValueClicked(sender: UIButton) {
+        presentValueAlert()
+    }
+    
+    func presentValueAlert() {
+        let alert = UIAlertController(title: "Add value", message: "Enter current value", preferredStyle: .alert)
+        
+        alert.addTextField { (textField: UITextField) in
+            textField.placeholder = "Value goes here"
+        }
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action:UIAlertAction) in
+            if let textField = alert.textFields?.first {
+                if textField.text == "" {
+                    print("enter something bruh")
+                } else {
+                    print("enter else")
+                }
+            }
+            self.updateValues(currentValue: (alert.textFields?.first?.text!)!)
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func updateValues(currentValue: String) {
+        currentValueLabel.text = currentValue
+        previousValueLabel.text = MetricDataRepository.previousValue
+        MetricDataRepository.updateAllValues(enteredValue: currentValue)
+        averageValueLabel.text = MetricDataRepository.averageValue
+    }
+    
+    func loadValuesForSelectedMetric(selectedMetric: String) {
+        
+//        switch selectedMetric {
+//            case "Bench Press":
+//                // do stuff
+//            case "Chest":
+//                // do stuff
+//            default:
+//            print("default switch")
+//        }
+        
     }
     
 }
@@ -36,5 +109,36 @@ extension MetricViewController: UITableViewDataSource, UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return sections.count
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("SELECT ROW METRICVIEW: " + String(indexPath.row))
+        
+        // grab cell-specific data from here
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MetricCell") as! MetricCell
+        //loadValuesForSelectedMetric(metricIndex: indexPath.row)
+        loadValuesForSelectedMetric(selectedMetric: cell.exerciseLabel.text ?? "")
+    }
+}
+
+extension MetricViewController: ScrollableGraphViewDataSource {
+    func value(forPlot plot: Plot, atIndex pointIndex: Int) -> Double {
+        print("log for plot")
+        switch(plot.identifier) {
+        case "line":
+            return MetricDataRepository.allValues[pointIndex]
+        default:
+            return 0
+        }
+    }
+    
+    func label(atIndex pointIndex: Int) -> String {
+        print("log label")
+        return "FEB \(pointIndex)"
+    }
+    
+    func numberOfPoints() -> Int {
+        print("log points")
+        return MetricDataRepository.allValues.count
     }
 }
