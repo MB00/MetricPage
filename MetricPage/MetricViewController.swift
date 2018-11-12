@@ -16,6 +16,8 @@ class MetricViewController: UIViewController {
     var sections: [String] = []
     var metricDataRepository: MetricDataRepository = MetricDataRepository.init()
     
+    var currentCellTitle = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -61,34 +63,22 @@ class MetricViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action:UIAlertAction) in
             if let textField = alert.textFields?.first {
                 if textField.text == "" {
-                    print("enter something bruh")
+                    print("alert text empty")
                 } else {
-                    print("enter else")
+                    print("alert text not empty")
                 }
             }
-            self.updateValues(currentValue: (alert.textFields?.first?.text!)!)
+            MetricDataRepository.setData(selectedMetricTitle: self.currentCellTitle, currentValue: (alert.textFields?.first?.text)!)
+            self.loadValuesForSelectedMetric(selectedMetricTitle: self.currentCellTitle)
         }))
         self.present(alert, animated: true, completion: nil)
     }
     
-    func updateValues(currentValue: String) {
-        currentValueLabel.text = currentValue
-        previousValueLabel.text = MetricDataRepository.previousValue
-        MetricDataRepository.updateAllValues(enteredValue: currentValue)
-        averageValueLabel.text = MetricDataRepository.averageValue
-    }
-    
-    func loadValuesForSelectedMetric(selectedMetric: String) {
-        
-//        switch selectedMetric {
-//            case "Bench Press":
-//                // do stuff
-//            case "Chest":
-//                // do stuff
-//            default:
-//            print("default switch")
-//        }
-        
+    func loadValuesForSelectedMetric(selectedMetricTitle: String) {
+        let data: MetricData = MetricDataRepository.getData(selectedMetricTitle: selectedMetricTitle)
+        currentValueLabel.text = String(data.currentValue)
+        previousValueLabel.text = String(data.previousValue)
+        averageValueLabel.text = String(data.averageValue)
     }
     
 }
@@ -112,12 +102,10 @@ extension MetricViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("SELECT ROW METRICVIEW: " + String(indexPath.row))
+        let metric = metrics[indexPath.row]
+        currentCellTitle = metric.exercise
         
-        // grab cell-specific data from here
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MetricCell") as! MetricCell
-        //loadValuesForSelectedMetric(metricIndex: indexPath.row)
-        loadValuesForSelectedMetric(selectedMetric: cell.exerciseLabel.text ?? "")
+        loadValuesForSelectedMetric(selectedMetricTitle: metric.exercise)
     }
 }
 

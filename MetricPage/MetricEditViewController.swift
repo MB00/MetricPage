@@ -87,6 +87,15 @@ extension MetricEditViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let metric = metrics[indexPath.row]
+//        //currentCellTitle = metric.exercise
+//        
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "MetricEditCell", for: indexPath) as! MetricEditCell
+//        
+//        
+//    }
+    
 //    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
 //        return sections[section]
 //    }
