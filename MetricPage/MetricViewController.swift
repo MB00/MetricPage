@@ -17,7 +17,7 @@ class MetricViewController: UIViewController {
     var metricDataRepository: MetricDataRepository = MetricDataRepository.init()
     
     var currentCellTitle = ""
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,10 +35,13 @@ class MetricViewController: UIViewController {
         let graphView = ScrollableGraphView()
         let linePlot = LinePlot(identifier: "line")
         let referenceLines = ReferenceLines()
+        let red = UIColor(red: 255/255, green: 59/255, blue: 48/255, alpha: 1)
         
         graphView.addPlot(plot: linePlot)
         graphView.addReferenceLines(referenceLines: referenceLines)
+        graphView.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
         
+        containerView.backgroundColor = red
         containerView.addSubview(graphView)
         containerView.bringSubviewToFront(graphView)
     }
