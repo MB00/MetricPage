@@ -33,15 +33,17 @@ class MetricViewController: UIViewController {
     
     func initGraphView() {
         let graphView = ScrollableGraphView()
+        graphView.dataSource = self
         let linePlot = LinePlot(identifier: "line")
         let referenceLines = ReferenceLines()
         let red = UIColor(red: 255/255, green: 59/255, blue: 48/255, alpha: 1)
         
         graphView.addPlot(plot: linePlot)
+        graphView.backgroundColor = UIColor.black
         graphView.addReferenceLines(referenceLines: referenceLines)
-        graphView.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+        graphView.frame = containerView.bounds
         
-        containerView.backgroundColor = red
+
         containerView.addSubview(graphView)
         containerView.bringSubviewToFront(graphView)
     }

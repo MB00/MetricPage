@@ -29,7 +29,7 @@ class MetricDataRepository {
     static var upperThighDate = "Today"
     static var waistDate = "Today"
     
-    static var allValues = [Double]()
+    static var allValues : [Double] = [1,20,30,40,50,60,70,80,90,100] //Test
     
     static var previousValue = "N/A"
     static var valueSum = 0.0
