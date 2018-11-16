@@ -8,6 +8,10 @@ class MetricEditCell: UITableViewCell {
     
     var isAdded: Bool = false
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
     func setMetricEdit() {
         addOrRemoveButton.addTarget(self, action: #selector(addOrRemoveButtonClicked), for: .touchUpInside)
     }
