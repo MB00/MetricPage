@@ -8,6 +8,7 @@ target 'MetricPage' do
   # Pods for MetricPage
 
   pod 'ScrollableGraphView'
+pod "SwiftChart"
   pod 'Disk', '~> 0.4.0'
 
   target 'MetricPageTests' do

@@ -1,5 +1,6 @@
 import UIKit
-import ScrollableGraphView
+import SwiftChart
+//import ScrollableGraphView
 
 class MetricViewController: UIViewController {
     
@@ -16,14 +17,21 @@ class MetricViewController: UIViewController {
     var sections: [String] = []
     var metricDataRepository: MetricDataRepository = MetricDataRepository.init()
     
+    let footerHeight : CGFloat = 50
+    let headerHeight : CGFloat = 30
+    
     var currentCellTitle = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.showsVerticalScrollIndicator = false
+        
         initData()
         initGraphView()
         initActions()
+        
+        
     }
     
     func initData() {
@@ -32,20 +40,104 @@ class MetricViewController: UIViewController {
     }
     
     func initGraphView() {
-        let graphView = ScrollableGraphView()
-        graphView.dataSource = self
-        let linePlot = LinePlot(identifier: "line")
-        let referenceLines = ReferenceLines()
-        let red = UIColor(red: 255/255, green: 59/255, blue: 48/255, alpha: 1)
+        let graphView = Chart()
+        graphView.delegate = self
+
+    
+        let formatter = GraphDataFormatter(points: getFakeGraphData(), range: .month)
         
-        graphView.addPlot(plot: linePlot)
-        graphView.backgroundColor = UIColor.black
-        graphView.addReferenceLines(referenceLines: referenceLines)
+        graphView.minX = -2
+        graphView.maxX = Double(formatter.maxX)
+        graphView.minY = formatter.paddedMinY
+        graphView.maxY = formatter.paddedMaxY
+        
+        
+        let series = ChartSeries(data: formatter.plotsPoints)
+        series.area = true
+        
+        graphView.xLabels = formatter.xLabelCoordinates
+        graphView.yLabels = formatter.yLabelsCoordinates
+        
+        
+        // Format the labels with a unit
+        graphView.xLabelsFormatter = formatter.getXLabelFormatter()
+        graphView.showYLabelsAndGrid = true
+        graphView.add(series)
+        graphView.backgroundColor = UIColor.white
         graphView.frame = containerView.bounds
         
-
         containerView.addSubview(graphView)
         containerView.bringSubviewToFront(graphView)
+        
+        let button = UIButton()
+        button.frame = CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: footerHeight)
+        button.addTarget(self, action: #selector(addMetricsPressed), for: .touchUpInside)
+        button.setTitle("+ Add More Metrics", for: .normal)
+        button.setTitleColor(UIColor.blue, for: .normal)
+        self.tableView.tableFooterView = button
+    }
+    
+    private func getFakeGraphData() -> [(Date,Double)] {
+        var points : [(Date,Double)] = []
+        
+        let start = Date()
+        
+        var components = DateComponents()
+        
+        components.day = -28
+        var nextdate = Calendar.current.date(byAdding: components, to: start)!
+        points.append((nextdate,168.0))
+        
+        components.day = -26
+        nextdate = Calendar.current.date(byAdding: components, to: start)!
+        points.append((nextdate,166.5))
+        
+        components.day = -24
+        nextdate = Calendar.current.date(byAdding: components, to: start)!
+        points.append((nextdate,163.5))
+        
+        components.day = -23
+        nextdate = Calendar.current.date(byAdding: components, to: start)!
+        points.append((nextdate,163.8))
+        
+        components.day = -21
+        nextdate = Calendar.current.date(byAdding: components, to: start)!
+        points.append((nextdate,163.5))
+        
+        components.day = -20
+        nextdate = Calendar.current.date(byAdding: components, to: start)!
+        points.append((nextdate,162.5))
+        
+        components.day = -16
+        nextdate = Calendar.current.date(byAdding: components, to: start)!
+        points.append((nextdate,163.5))
+        
+        components.day = -10
+        nextdate = Calendar.current.date(byAdding: components, to: start)!
+        points.append((nextdate,162.0))
+        
+        components.day = -9
+        nextdate = Calendar.current.date(byAdding: components, to: start)!
+        points.append((nextdate,160.5))
+        
+        components.day = -7
+        nextdate = Calendar.current.date(byAdding: components, to: start)!
+        points.append((nextdate,160.5))
+        
+        components.day = -4
+        nextdate = Calendar.current.date(byAdding: components, to: start)!
+        points.append((nextdate,161.5))
+        
+        components.day = -2
+        nextdate = Calendar.current.date(byAdding: components, to: start)!
+        points.append((nextdate,161.2))
+        
+        components.day = -1
+        nextdate = Calendar.current.date(byAdding: components, to: start)!
+        points.append((nextdate,161.5))
+        
+        
+        return points
     }
     
     func initActions() {
@@ -56,6 +148,14 @@ class MetricViewController: UIViewController {
     
     @objc func onCurrentValueClicked(sender: UIButton) {
         presentValueAlert()
+    }
+    
+    @objc private func addMetricsPressed() {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let vc = storyboard.instantiateViewController(withIdentifier: "MetricEditViewController")
+        self.navigationController?.pushViewController(vc, animated: true)
+        
     }
     
     func presentValueAlert() {
@@ -88,6 +188,22 @@ class MetricViewController: UIViewController {
     
 }
 
+extension MetricViewController : ChartDelegate {
+    func didTouchChart(_ chart: Chart, indexes: [Int?], x: Double, left: CGFloat) {
+        print("touch")
+    }
+    
+    func didFinishTouchingChart(_ chart: Chart) {
+        
+    }
+    
+    func didEndTouchingChart(_ chart: Chart) {
+        
+    }
+    
+    
+}
+
 extension MetricViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return metrics.count
@@ -96,6 +212,7 @@ extension MetricViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let metric = metrics[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "MetricCell") as! MetricCell
+        cell.selectionStyle = .none
         
         cell.setMetric(metric: metric)
         
@@ -112,26 +229,54 @@ extension MetricViewController: UITableViewDataSource, UITableViewDelegate {
         
         loadValuesForSelectedMetric(selectedMetricTitle: metric.exercise)
     }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return headerHeight
+    }
+    
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let label = UILabel()
+        
+        let hview = UIView()
+        hview.backgroundColor = UIColor.white
+        hview.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: headerHeight)
+        
+        let sectionTitle = sections[section]
+        label.backgroundColor = UIColor.black.withAlphaComponent(0.03)
+        label.textAlignment = .center
+        label.textColor = UIColor.gray
+        label.text = sectionTitle
+        hview.addSubview(label)
+        label.frame = hview.bounds
+        
+        return hview
+    }
+    
+ 
 }
 
-extension MetricViewController: ScrollableGraphViewDataSource {
-    func value(forPlot plot: Plot, atIndex pointIndex: Int) -> Double {
-        print("log for plot")
-        switch(plot.identifier) {
-        case "line":
-            return MetricDataRepository.allValues[pointIndex]
-        default:
-            return 0
-        }
-    }
-    
-    func label(atIndex pointIndex: Int) -> String {
-        print("log label")
-        return "FEB \(pointIndex)"
-    }
-    
-    func numberOfPoints() -> Int {
-        print("log points")
-        return MetricDataRepository.allValues.count
-    }
-}
+
+
+//
+//extension MetricViewController: ScrollableGraphViewDataSource {
+//    func value(forPlot plot: Plot, atIndex pointIndex: Int) -> Double {
+//        print("log for plot")
+//        switch(plot.identifier) {
+//        case "line":
+//            return MetricDataRepository.allValues[pointIndex]
+//        default:
+//            return 0
+//        }
+//    }
+//
+//    func label(atIndex pointIndex: Int) -> String {
+//        print("log label")
+//        return "FEB \(pointIndex)"
+//    }
+//
+//    func numberOfPoints() -> Int {
+//        print("log points")
+//        return MetricDataRepository.allValues.count
+//    }
+//}

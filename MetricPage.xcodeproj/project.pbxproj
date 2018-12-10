@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32242C5C21B200F1002B8DFD /* GraphDataFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32242C5B21B200F1002B8DFD /* GraphDataFormatter.swift */; };
 		4A46C55E1074ABD5FF8462FC /* Pods_MetricPage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7AF322FA772FAD3467713B3 /* Pods_MetricPage.framework */; };
 		785289528D9FE80EDE87CDF3 /* Pods_MetricPageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A40D5FEA1D9BF18067AA7F /* Pods_MetricPageTests.framework */; };
 		BC189454F4AAEFF9681EF097 /* Pods_MetricPageUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B5990BCCF5C016122CE961 /* Pods_MetricPageUITests.framework */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		09EAA446B69B3529935205E4 /* Pods-MetricPage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetricPage.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetricPage/Pods-MetricPage.release.xcconfig"; sourceTree = "<group>"; };
+		32242C5B21B200F1002B8DFD /* GraphDataFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphDataFormatter.swift; sourceTree = "<group>"; };
 		39B5990BCCF5C016122CE961 /* Pods_MetricPageUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetricPageUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F2D0DC3D5704F4281B3D708 /* Pods-MetricPageUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetricPageUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetricPageUITests/Pods-MetricPageUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AF0355904774BB31B4AFA132 /* Pods-MetricPage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetricPage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MetricPage/Pods-MetricPage.debug.xcconfig"; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				E2B924262193F92E0012E0D4 /* Assets.xcassets */,
 				E2B924282193F92E0012E0D4 /* LaunchScreen.storyboard */,
 				E2B9242B2193F92E0012E0D4 /* Info.plist */,
+				32242C5B21B200F1002B8DFD /* GraphDataFormatter.swift */,
 			);
 			path = MetricPage;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-MetricPage/Pods-MetricPage-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Disk/Disk.framework",
 				"${BUILT_PRODUCTS_DIR}/ScrollableGraphView/ScrollableGraphView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftChart/SwiftChart.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -404,6 +408,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Disk.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScrollableGraphView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftChart.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -418,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2B9245A2193FA450012E0D4 /* MetricViewController.swift in Sources */,
+				32242C5C21B200F1002B8DFD /* GraphDataFormatter.swift in Sources */,
 				E2B924542193FA0E0012E0D4 /* MetricDataRepository.swift in Sources */,
 				E2B924582193FA2E0012E0D4 /* MetricEditViewController.swift in Sources */,
 				E2B9244E2193F9DC0012E0D4 /* Action.swift in Sources */,

@@ -1,20 +1,24 @@
 PODS:
   - Disk (0.4.0)
   - ScrollableGraphView (4.0.6)
+  - SwiftChart (1.0.1)
 
 DEPENDENCIES:
   - Disk (~> 0.4.0)
   - ScrollableGraphView
+  - SwiftChart
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Disk
     - ScrollableGraphView
+    - SwiftChart
 
 SPEC CHECKSUMS:
   Disk: ef2956657d5bb56034b38b29b352170165226440
   ScrollableGraphView: 4af35d4ea9ecdec665d34a74da51da161ddff8ac
+  SwiftChart: ba767a678d568a5ee22d419e146a0582865e1aff
 
-PODFILE CHECKSUM: c6eb52b4d1df21559cfbdf67d583102dc56285f2
+PODFILE CHECKSUM: 22d5d9c5aa1e0363399ac13eb1aacec2eba92e29
 
 COCOAPODS: 1.5.3
